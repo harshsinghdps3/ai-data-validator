@@ -46,5 +46,5 @@ def run_validation(raw_input: str, schema_name: str, llm_service: LLMService) ->
         "audit_log": []
     }
     
-    final_state = agent.invoke(initial_state)
+    final_state = agent.invoke(initial_state)  # type: ignore
     return final_state
