@@ -6,7 +6,7 @@ import re
 class LLMService:
     def __init__(self):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.5-flash",
             google_api_key=settings.GEMINI_API_KEY,
             temperature=0.1,  # Low temperature for consistent extraction
             max_tokens=4096
